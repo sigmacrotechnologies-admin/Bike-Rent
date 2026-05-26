@@ -97,8 +97,8 @@ export default function FleetManagementPage() {
         </div>
       ) : (
         <div className="space-y-4">
-          {[...grouped.entries()].map(([city, hubs]) => {
-            const cityCount = [...hubs.values()].reduce((n, list) => n + list.length, 0);
+          {Array.from(grouped.entries()).map(([city, hubs]) => {
+            const cityCount = Array.from(hubs.values()).reduce((n, list) => n + list.length, 0);
             const isOpen = expanded[city] !== false;
 
             return (
@@ -118,7 +118,7 @@ export default function FleetManagementPage() {
 
                 {isOpen && (
                   <div className="space-y-4 border-t border-border/30 p-4">
-                    {[...hubs.entries()].map(([hub, hubVehicles]) => (
+                    {Array.from(hubs.entries()).map(([hub, hubVehicles]) => (
                       <div key={`${city}-${hub}`} className="rounded-lg border border-border/30 bg-background/50 p-4">
                         <div className="mb-4 flex flex-wrap items-center justify-between gap-2">
                           <div>

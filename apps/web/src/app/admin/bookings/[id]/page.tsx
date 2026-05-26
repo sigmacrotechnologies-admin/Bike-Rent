@@ -150,7 +150,7 @@ export default function AdminBookingDetailPage() {
                 <p className="text-sm text-muted-foreground">
                   Invoice {returnSuccess.invoiceNumber} generated. Deposit refunded: {formatCurrency(returnSuccess.depositRefunded || 0)}
                   {(returnSuccess.additionalDue ?? 0) > 0 && (
-                    <span className="text-red-500"> · Additional due: {formatCurrency(returnSuccess.additionalDue)}</span>
+                    <span className="text-red-500"> · Additional due: {formatCurrency(returnSuccess.additionalDue ?? 0)}</span>
                   )}
                 </p>
                 <div className="flex flex-wrap gap-2 pt-2">

@@ -21,7 +21,7 @@ export const authService = {
   getMe: () => api.get('/auth/me'),
 };
 
-const cleanParams = (params?: Record<string, string | number>) =>
+const cleanParams = (params?: Record<string, string | number | boolean>) =>
   params
     ? Object.fromEntries(
         Object.entries(params).filter(([, v]) => v !== '' && v !== undefined && v !== null)
@@ -45,7 +45,7 @@ export const vehicleService = {
 
 export const bookingService = {
   create: (data: Record<string, unknown>) => api.post('/bookings', data),
-  list: (params?: Record<string, string>) => api.get('/bookings', { params }),
+  list: (params?: Record<string, string | number>) => api.get('/bookings', { params: cleanParams(params) }),
   getById: (id: string) => api.get(`/bookings/${id}`),
   cancel: (id: string, reason: string) => api.post(`/bookings/${id}/cancel`, { reason }),
   extend: (id: string, newEndDate: string) => api.post(`/bookings/${id}/extend`, { newEndDate }),
@@ -70,26 +70,30 @@ export const paymentService = {
 
 export const walletService = {
   getBalance: () => api.get('/wallet'),
-  listTransactions: (params?: Record<string, string>) => api.get('/wallet/transactions', { params }),
+  listTransactions: (params?: Record<string, string | number>) =>
+    api.get('/wallet/transactions', { params: cleanParams(params) }),
   topUp: (amount: number) => api.post('/wallet/topup', { amount }),
-  listAll: (params?: Record<string, string>) => api.get('/wallet/admin/all', { params }),
+  listAll: (params?: Record<string, string | number>) =>
+    api.get('/wallet/admin/all', { params: cleanParams(params) }),
   adminAdjust: (userId: string, data: { amount: number; description?: string }) =>
     api.post(`/wallet/admin/${userId}/adjust`, data),
 };
 
 export const analyticsService = {
   dashboard: () => api.get('/analytics/dashboard'),
-  reports: (params?: Record<string, string>) => api.get('/analytics/reports', { params }),
+  reports: (params?: Record<string, string | number>) =>
+    api.get('/analytics/reports', { params: cleanParams(params) }),
 };
 
 export const supportService = {
   create: (data: Record<string, string>) => api.post('/support', data),
-  list: (params?: Record<string, string>) => api.get('/support', { params }),
+  list: (params?: Record<string, string | number>) => api.get('/support', { params: cleanParams(params) }),
   addMessage: (id: string, message: string) => api.post(`/support/${id}/messages`, { message }),
 };
 
 export const notificationService = {
-  list: (params?: Record<string, string>) => api.get('/notifications', { params }),
+  list: (params?: Record<string, string | number>) =>
+    api.get('/notifications', { params: cleanParams(params) }),
   markAsRead: (id: string) => api.patch(`/notifications/${id}/read`),
   markAllAsRead: () => api.patch('/notifications/read-all'),
 };
@@ -98,15 +102,16 @@ export const userService = {
   getProfile: () => api.get('/users/profile'),
   updateProfile: (data: Record<string, unknown>) => api.put('/users/profile', data),
   submitKYC: (data: Record<string, unknown>) => api.post('/users/kyc/submit', data),
-  listCustomers: (params?: Record<string, string>) => api.get('/users/customers', { params }),
+  listCustomers: (params?: Record<string, string | number>) =>
+    api.get('/users/customers', { params: cleanParams(params) }),
   verifyKYC: (id: string, data: Record<string, string>) => api.patch(`/users/${id}/kyc`, data),
 };
 
 export const gpsService = {
   fleet: () => api.get('/gps/fleet'),
   live: (vehicleId: string) => api.get(`/gps/${vehicleId}/live`),
-  history: (vehicleId: string, params?: Record<string, string>) =>
-    api.get(`/gps/${vehicleId}/history`, { params }),
+  history: (vehicleId: string, params?: Record<string, string | number>) =>
+    api.get(`/gps/${vehicleId}/history`, { params: cleanParams(params) }),
 };
 
 export const couponService = {
@@ -117,7 +122,8 @@ export const couponService = {
 };
 
 export const maintenanceService = {
-  list: (params?: Record<string, string>) => api.get('/maintenance', { params }),
+  list: (params?: Record<string, string | number>) =>
+    api.get('/maintenance', { params: cleanParams(params) }),
   create: (data: Record<string, unknown>) => api.post('/maintenance', data),
   update: (id: string, data: Record<string, unknown>) => api.patch(`/maintenance/${id}`, data),
 };

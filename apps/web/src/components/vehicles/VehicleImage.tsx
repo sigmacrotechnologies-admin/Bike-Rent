@@ -29,7 +29,7 @@ export function VehicleImage({
 
   useEffect(() => {
     setSrc(getVehicleImage(vehicle));
-  }, [vehicle.thumbnail, vehicle.registrationNumber, vehicle.type, vehicle.name]);
+  }, [vehicle]);
 
   return (
     <div className={cn('relative overflow-hidden bg-gradient-to-br from-electric-900/20 to-background', className)}>

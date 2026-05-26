@@ -163,7 +163,6 @@ export function VehicleForm({
   } = useForm<FormData>({
     resolver: zodResolver(schema),
     defaultValues: {
-      type: 'bike',
       fuelType: 'petrol',
       transmission: 'manual',
       year: new Date().getFullYear(),
