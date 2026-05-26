@@ -5,6 +5,7 @@
   "main": "src/server.js",
   "type": "module",
   "scripts": {
+    "build": "echo \"Express API — no build step required\"",
     "dev": "nodemon src/server.js",
     "start": "node src/server.js",
     "lint": "eslint src/",
