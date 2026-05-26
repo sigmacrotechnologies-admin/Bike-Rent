@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" fill="none">
+  <rect width="800" height="500" fill="#0a0a0f"/>
+  <defs><linearGradient id="bg" x1="0" y1="0" x2="800" y2="500"><stop offset="0%" stop-color="#ff6600" stop-opacity="0.25"/><stop offset="100%" stop-color="#007BFF" stop-opacity="0.05"/></linearGradient></defs>
+  <rect width="800" height="500" fill="url(#bg)" opacity="0.6"/>
+  <ellipse cx="400" cy="420" rx="320" ry="30" fill="#ff6600" opacity="0.1"/>
+  <circle cx="230" cy="345" r="68" fill="#111" stroke="#333" stroke-width="4"/>
+  <circle cx="230" cy="345" r="42" fill="#1a1a2e" stroke="#ff6600" stroke-width="3"/>
+  <circle cx="570" cy="345" r="68" fill="#111" stroke="#333" stroke-width="4"/>
+  <circle cx="570" cy="345" r="42" fill="#1a1a2e" stroke="#ff6600" stroke-width="3"/>
+  <path d="M230 345 L300 180 L390 165 L480 175 L570 345" stroke="#ff6600" stroke-width="7" fill="none" stroke-linecap="round"/>
+  <path d="M300 180 L350 345 L230 345" stroke="#ff6600" stroke-width="5" fill="none"/>
+  <path d="M350 175 L420 175 L480 175" stroke="#ff6600" stroke-width="8" fill="none"/>
+  <rect x="330" y="160" width="100" height="35" rx="6" fill="#ff6600" opacity="0.9"/>
+  <path d="M280 172 Q360 148 440 172 L420 200 Q360 188 280 198 Z" fill="#111"/>
+  <path d="M480 175 L530 140" stroke="#ccc" stroke-width="5" stroke-linecap="round"/>
+  <circle cx="575" cy="185" r="14" fill="#fff"/>
+  <text x="400" y="480" text-anchor="middle" fill="#ff6600" font-family="Arial,sans-serif" font-size="16" font-weight="bold">KTM Duke 200</text>
+</svg>

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" fill="none">
+  <rect width="800" height="500" fill="#0a0a0f"/>
+  <ellipse cx="400" cy="430" rx="280" ry="22" fill="#007BFF" opacity="0.08"/>
+  <path d="M160 340 L210 260 L330 235 L520 235 L640 265 L680 340 Z" fill="#333" stroke="#007BFF" stroke-width="2"/>
+  <circle cx="250" cy="345" r="42" fill="#111" stroke="#007BFF" stroke-width="2"/>
+  <circle cx="580" cy="345" r="42" fill="#111" stroke="#007BFF" stroke-width="2"/>
+  <text x="400" y="460" text-anchor="middle" fill="#007BFF" font-family="Arial" font-size="18">=— Car</text>
+</svg>

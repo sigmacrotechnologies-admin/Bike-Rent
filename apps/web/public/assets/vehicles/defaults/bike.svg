@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" fill="none">
+  <rect width="800" height="500" fill="#0a0a0f"/>
+  <ellipse cx="400" cy="420" rx="280" ry="25" fill="#007BFF" opacity="0.1"/>
+  <circle cx="220" cy="340" r="65" fill="#111" stroke="#007BFF" stroke-width="3"/>
+  <circle cx="580" cy="340" r="65" fill="#111" stroke="#007BFF" stroke-width="3"/>
+  <path d="M220 340 L320 200 L420 185 L520 200 L580 340" stroke="#007BFF" stroke-width="6" fill="none"/>
+  <ellipse cx="380" cy="210" rx="80" ry="40" fill="#1a1a2e" stroke="#007BFF" stroke-width="1"/>
+  <text x="400" y="460" text-anchor="middle" fill="#007BFF" font-family="Arial" font-size="18"><Í Bike</text>
+</svg>

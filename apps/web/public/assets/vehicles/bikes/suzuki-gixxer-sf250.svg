@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" fill="none">
+  <rect width="800" height="500" fill="#0a0a0f"/>
+  <defs><linearGradient id="bg" x1="0" y1="0" x2="800" y2="500"><stop offset="0%" stop-color="#aaa" stop-opacity="0.15"/><stop offset="100%" stop-color="#007BFF" stop-opacity="0.05"/></linearGradient></defs>
+  <rect width="800" height="500" fill="url(#bg)" opacity="0.6"/>
+  <ellipse cx="400" cy="420" rx="320" ry="30" fill="#aaa" opacity="0.08"/>
+  <circle cx="226" cy="341" r="68" fill="#111" stroke="#333" stroke-width="4"/>
+  <circle cx="226" cy="341" r="42" fill="#1a1a2e" stroke="#aaa" stroke-width="2"/>
+  <circle cx="574" cy="341" r="68" fill="#111" stroke="#333" stroke-width="4"/>
+  <circle cx="574" cy="341" r="42" fill="#1a1a2e" stroke="#aaa" stroke-width="2"/>
+  <path d="M226 341 L305 185 L395 168 L510 182 L574 341" stroke="#bbb" stroke-width="6" fill="none"/>
+  <path d="M305 185 L358 341 L226 341" stroke="#bbb" stroke-width="5" fill="none"/>
+  <path d="M395 168 L480 175 L510 182 L490 240 L395 225 L370 185 Z" fill="#888" stroke="#aaa" opacity="0.9"/>
+  <path d="M290 182 Q360 158 445 182 L425 210 Q360 198 290 206 Z" fill="#111"/>
+  <path d="M510 182 L552 150" stroke="#ccc" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="584" cy="192" r="14" fill="#fff"/>
+  <text x="400" y="480" text-anchor="middle" fill="#ccc" font-family="Arial,sans-serif" font-size="16" font-weight="bold">Suzuki Gixxer SF 250</text>
+</svg>

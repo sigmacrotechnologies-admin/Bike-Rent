@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" fill="none">
+  <rect width="800" height="500" fill="#0a0a0f"/>
+  <defs><linearGradient id="bg" x1="0" y1="0" x2="800" y2="500"><stop offset="0%" stop-color="#39FF14" stop-opacity="0.15"/><stop offset="100%" stop-color="#007BFF" stop-opacity="0.05"/></linearGradient></defs>
+  <rect width="800" height="500" fill="url(#bg)" opacity="0.6"/>
+  <ellipse cx="400" cy="420" rx="320" ry="30" fill="#39FF14" opacity="0.08"/>
+  <circle cx="218" cy="338" r="74" fill="#111" stroke="#333" stroke-width="4"/>
+  <circle cx="218" cy="338" r="48" fill="#1a1a2e" stroke="#39FF14" stroke-width="3"/>
+  <circle cx="582" cy="338" r="74" fill="#111" stroke="#333" stroke-width="4"/>
+  <circle cx="582" cy="338" r="48" fill="#1a1a2e" stroke="#39FF14" stroke-width="3"/>
+  <path d="M218 338 L290 168 L380 148 L520 165 L582 338" stroke="#39FF14" stroke-width="7" fill="none"/>
+  <path d="M290 168 L345 338 L218 338" stroke="#39FF14" stroke-width="5" fill="none"/>
+  <path d="M380 148 L480 155" stroke="#39FF14" stroke-width="8" fill="none"/>
+  <path d="M330 155 L420 148 L500 158 L520 175 L480 220 L380 210 L330 175 Z" fill="#006600" stroke="#39FF14" stroke-width="1"/>
+  <path d="M275 162 Q360 135 460 162 L440 195 Q360 182 275 192 Z" fill="#111"/>
+  <path d="M520 165 L565 125" stroke="#ccc" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="590" cy="178" r="14" fill="#fff"/>
+  <text x="400" y="480" text-anchor="middle" fill="#39FF14" font-family="Arial,sans-serif" font-size="16" font-weight="bold">Kawasaki Ninja 300</text>
+</svg>

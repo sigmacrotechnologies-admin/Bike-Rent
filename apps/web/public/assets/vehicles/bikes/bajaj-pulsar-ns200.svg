@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" fill="none">
+  <rect width="800" height="500" fill="#0a0a0f"/>
+  <defs><linearGradient id="bg" x1="0" y1="0" x2="800" y2="500"><stop offset="0%" stop-color="#ffffff" stop-opacity="0.1"/><stop offset="100%" stop-color="#007BFF" stop-opacity="0.05"/></linearGradient></defs>
+  <rect width="800" height="500" fill="url(#bg)" opacity="0.6"/>
+  <ellipse cx="400" cy="420" rx="320" ry="30" fill="#fff" opacity="0.05"/>
+  <circle cx="228" cy="343" r="68" fill="#111" stroke="#333" stroke-width="4"/>
+  <circle cx="228" cy="343" r="42" fill="#1a1a2e" stroke="#aaa" stroke-width="2"/>
+  <circle cx="572" cy="343" r="68" fill="#111" stroke="#333" stroke-width="4"/>
+  <circle cx="572" cy="343" r="42" fill="#1a1a2e" stroke="#aaa" stroke-width="2"/>
+  <path d="M228 343 L305 188 L395 172 L505 188 L572 343" stroke="#ddd" stroke-width="6" fill="none"/>
+  <path d="M305 188 L358 343 L228 343" stroke="#ddd" stroke-width="5" fill="none"/>
+  <rect x="335" y="170" width="95" height="30" rx="6" fill="#e8e8e8" stroke="#bbb"/>
+  <path d="M290 185 Q360 162 435 185 L418 210 Q360 200 290 208 Z" fill="#222"/>
+  <path d="M505 188 L548 155" stroke="#ccc" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="582" cy="198" r="15" fill="#fff"/>
+  <text x="400" y="480" text-anchor="middle" fill="#ddd" font-family="Arial,sans-serif" font-size="16" font-weight="bold">Bajaj Pulsar NS200</text>
+</svg>

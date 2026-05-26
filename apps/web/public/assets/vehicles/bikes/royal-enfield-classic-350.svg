@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" fill="none">
+  <rect width="800" height="500" fill="#0a0a0f"/>
+  <rect width="800" height="500" fill="url(#bg)" opacity="0.6"/>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="800" y2="500">
+      <stop offset="0%" stop-color="#007BFF" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#39FF14" stop-opacity="0.05"/>
+    </linearGradient>
+    <linearGradient id="body" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1a1a2e"/>
+      <stop offset="100%" stop-color="#0d0d18"/>
+    </linearGradient>
+  </defs>
+  <!-- ground -->
+  <ellipse cx="400" cy="420" rx="320" ry="30" fill="#007BFF" opacity="0.08"/>
+  <!-- rear wheel -->
+  <circle cx="220" cy="340" r="70" fill="#111" stroke="#333" stroke-width="4"/>
+  <circle cx="220" cy="340" r="45" fill="#1a1a2e" stroke="#007BFF" stroke-width="2"/>
+  <circle cx="220" cy="340" r="12" fill="#007BFF"/>
+  <!-- front wheel -->
+  <circle cx="580" cy="340" r="70" fill="#111" stroke="#333" stroke-width="4"/>
+  <circle cx="580" cy="340" r="45" fill="#1a1a2e" stroke="#007BFF" stroke-width="2"/>
+  <circle cx="580" cy="340" r="12" fill="#007BFF"/>
+  <!-- frame -->
+  <path d="M220 340 L320 200 L420 180 L520 200 L580 340" stroke="#007BFF" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <path d="M320 200 L380 340 L220 340" stroke="#007BFF" stroke-width="5" fill="none"/>
+  <!-- fuel tank / body - CLASSIC BLACK -->
+  <ellipse cx="380" cy="210" rx="90" ry="45" fill="url(#body)" stroke="#222" stroke-width="2"/>
+  <rect x="340" y="185" width="80" height="30" rx="8" fill="#111" stroke="#333" stroke-width="1"/>
+  <!-- seat -->
+  <path d="M300 195 Q360 170 440 195 L420 220 Q360 210 300 220 Z" fill="#1a1a1a" stroke="#333" stroke-width="1"/>
+  <!-- handlebar -->
+  <path d="M520 200 L560 160" stroke="#ccc" stroke-width="4" stroke-linecap="round"/>
+  <path d="M545 155 L575 155" stroke="#ccc" stroke-width="4" stroke-linecap="round"/>
+  <!-- headlight -->
+  <circle cx="590" cy="210" r="18" fill="#f0f0f0" stroke="#007BFF" stroke-width="2"/>
+  <!-- brand badge -->
+  <text x="400" y="480" text-anchor="middle" fill="#007BFF" font-family="Arial,sans-serif" font-size="16" font-weight="bold">Royal Enfield Classic 350</text>
+</svg>

@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Montserrat:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 3.9%;
+    --primary: 211 100% 50%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 0 0% 96.1%;
+    --secondary-foreground: 0 0% 9%;
+    --muted: 0 0% 96.1%;
+    --muted-foreground: 0 0% 45.1%;
+    --accent: 142 76% 45%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84.2% 60.2%;
+    --border: 0 0% 89.8%;
+    --input: 0 0% 89.8%;
+    --ring: 211 100% 50%;
+    --radius: 0.75rem;
+  }
+
+  .dark {
+    --background: 222 47% 4%;
+    --foreground: 210 40% 98%;
+    --card: 222 40% 7%;
+    --card-foreground: 210 40% 98%;
+    --primary: 211 100% 50%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 217 33% 12%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 217 33% 12%;
+    --muted-foreground: 215 20% 55%;
+    --accent: 142 76% 45%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 62.8% 30.6%;
+    --border: 217 33% 14%;
+    --input: 217 33% 14%;
+    --ring: 211 100% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+  ::selection {
+    @apply bg-electric-500/30 text-foreground;
+  }
+}
+
+@layer utilities {
+  .glass {
+    @apply bg-white/10 backdrop-blur-xl border border-white/20 shadow-xl;
+  }
+  .glass-dark {
+    @apply bg-black/30 backdrop-blur-xl border border-white/10 shadow-2xl;
+  }
+  .glass-card {
+    @apply bg-card/60 backdrop-blur-md border border-border/50 shadow-lg;
+  }
+  .gradient-primary {
+    @apply bg-gradient-to-r from-electric-500 via-electric-600 to-electric-700;
+  }
+  .gradient-accent {
+    @apply bg-gradient-to-r from-neon-400 to-neon-500;
+  }
+  .gradient-mesh {
+    background:
+      radial-gradient(ellipse 80% 50% at 20% -10%, rgba(0, 123, 255, 0.18), transparent),
+      radial-gradient(ellipse 60% 40% at 80% 0%, rgba(57, 255, 20, 0.08), transparent),
+      radial-gradient(ellipse 50% 50% at 50% 100%, rgba(0, 123, 255, 0.06), transparent);
+  }
+  .text-gradient {
+    @apply bg-gradient-to-r from-electric-400 via-electric-300 to-neon-400 bg-clip-text text-transparent;
+  }
+  .text-gradient-blue {
+    @apply bg-gradient-to-r from-white via-electric-300 to-electric-500 bg-clip-text text-transparent;
+  }
+  .grid-bg {
+    background-image:
+      linear-gradient(rgba(0, 123, 255, 0.04) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(0, 123, 255, 0.04) 1px, transparent 1px);
+    background-size: 64px 64px;
+  }
+  .glow-blue {
+    box-shadow: 0 0 40px rgba(0, 123, 255, 0.25), 0 0 80px rgba(0, 123, 255, 0.1);
+  }
+  .glow-neon {
+    box-shadow: 0 0 30px rgba(57, 255, 20, 0.2);
+  }
+  .card-shine {
+    @apply relative overflow-hidden;
+  }
+  .card-shine::before {
+    content: '';
+    @apply absolute inset-0 opacity-0 transition-opacity duration-500 pointer-events-none;
+    background: linear-gradient(105deg, transparent 40%, rgba(255,255,255,0.06) 50%, transparent 60%);
+  }
+  .card-shine:hover::before {
+    @apply opacity-100;
+  }
+  .section-badge {
+    @apply inline-flex items-center gap-2 rounded-full border border-electric-500/30 bg-electric-500/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-wider text-electric-400;
+  }
+  .premium-border {
+    @apply relative;
+  }
+  .premium-border::after {
+    content: '';
+    @apply absolute inset-0 rounded-[inherit] pointer-events-none;
+    background: linear-gradient(135deg, rgba(0,123,255,0.4), transparent 40%, transparent 60%, rgba(57,255,20,0.3));
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask-composite: exclude;
+    padding: 1px;
+    border-radius: inherit;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  .premium-border:hover::after {
+    opacity: 1;
+  }
+}
+
+/* scrollbar */
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { @apply bg-background; }
+::-webkit-scrollbar-thumb { @apply bg-electric-500/30 rounded-full; }
+::-webkit-scrollbar-thumb:hover { @apply bg-electric-500/50; }

@@ -1,0 +1,27 @@
+{
+  "name": "velocity-rent",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Enterprise Vehicle Rental Platform - Bikes, Cars, EVs, Scooters",
+  "workspaces": [
+    "apps/web",
+    "backend"
+  ],
+  "scripts": {
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:web\"",
+    "dev:backend": "npm run dev --workspace=backend",
+    "dev:web": "npm run dev --workspace=apps/web",
+    "setup:local": "npm run seed --workspace=backend",
+    "seed": "npm run seed --workspace=backend",
+    "build": "npm run build --workspace=backend && npm run build --workspace=apps/web",
+    "start": "concurrently \"npm run start --workspace=backend\" \"npm run start --workspace=apps/web\"",
+    "docker:up": "docker-compose up -d --build",
+    "docker:down": "docker-compose down"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}
